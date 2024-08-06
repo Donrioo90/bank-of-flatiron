@@ -1,3 +1,4 @@
+// TransactionForm.js
 import React, { useState } from 'react';
 
 const AddTransactionForm = ({ addTransaction }) => {
@@ -10,8 +11,8 @@ const AddTransactionForm = ({ addTransaction }) => {
     addTransaction({
       id: Date.now(),
       description,
-      amount: parseFloat(amount),
-      category
+      amount: parseFloat(amount), // Ensure amount is treated as a number
+      category,
     });
     setDescription('');
     setAmount('');
