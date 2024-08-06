@@ -1,26 +1,29 @@
 import React from 'react';
 
-const TransactionTable = ({ transactions }) => {
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th>Description</th>
-          <th>Amount</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {transactions.map((transaction) => (
-          <tr key={transaction.id}>
-            <td>{transaction.description}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.category}</td>
+const TransactionTable = ({ transactions, deleteTransaction }) => {
+    return (
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Action</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
-
-export default TransactionTable;
+        </thead>
+        <tbody>
+          {transactions.map((transaction) => (
+            <tr key={transaction.id}>
+              <td>{transaction.description}</td>
+              <td>{transaction.amount}</td>
+              <td>{transaction.category}</td>
+              <td>
+                <button onClick={() => deleteTransaction(transaction.id)}>Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
+  
