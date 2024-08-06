@@ -1,11 +1,11 @@
-// TransactionForm.js
+// Importing necessary dependencies
 import React, { useState } from 'react';
-
+// Define the AddTransactionForm component, which takes a prop called `addTransaction
 const AddTransactionForm = ({ addTransaction }) => {
   const [description, setDescription] = useState('');
   const [amount, setAmount] = useState('');
   const [category, setCategory] = useState('');
-
+// Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     addTransaction({
@@ -20,7 +20,7 @@ const AddTransactionForm = ({ addTransaction }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>// Form element with an onSubmit event handler
       <input
         type="text"
         placeholder="Description"

@@ -1,0 +1,22 @@
+table {
+    width: 50%;
+    border-collapse: separate;
+    border-spacing: 0 0.1px; /* spacing between rows */
+  }
+  
+  th, td {
+    padding: 5px 5px; /* padding to cells */
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  td {
+    border-bottom: 0.2px /* a border between rows */
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  

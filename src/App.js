@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import TransactionTable from './components/TransactionTable';
-import AddTransactionForm from './components/AddTransactionForm';
-import SearchBar from './components/SearchBar';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import './App.css'; // Optional: for styling
@@ -39,10 +37,7 @@ const App = () => {
 
   return (
     <div>
-      <NavBar />
-      <h1>Bank Transactions</h1>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <AddTransactionForm addTransaction={addTransaction} />
+      <NavBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} addTransaction={addTransaction} />
       <button onClick={() => sortTransactions('description')}>Sort by Description</button>
       <button onClick={() => sortTransactions('category')}>Sort by Category</button>
       <TransactionTable transactions={filteredTransactions} deleteTransaction={deleteTransaction} />

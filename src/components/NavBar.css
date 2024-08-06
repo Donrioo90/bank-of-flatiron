@@ -1,28 +1,39 @@
 nav {
-    background-color: #282c34;
-    padding: 1rem;
-    color: white;
+    background-color: #62b1c9;
+    color: rgb(15, 13, 13);
+    padding: 0.1em;
   }
   
-  nav ul {
-    list-style: none;
+  nav h1 {
+    margin: 0;
+    font-size: 2rem; /*  font size */
+    
+  }
+  
+  .nav-content {
     display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    gap: 0.3rem; /*  gap between elements */
+    margin-top: 0.3rem; /* margin-top */
   }
   
-  nav ul li {
-    margin: 0;
+  .nav-content input,
+  .nav-content button {
+    padding: 0.3rem; /* padding */
+    margin: 0.1rem 0; /* margin */
+    font-size: 0.9rem; /*font size */
+    width: 100%; /* Full width */
+    max-width: 300px; /*max width */
   }
   
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+  .add-transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
   
-  nav ul li a:hover {
-    text-decoration: underline;
+  .add-transaction-form input {
+    width: 100%; /* Full width */
+    max-width: 300px; /*max width */
   }
   

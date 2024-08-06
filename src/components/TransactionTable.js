@@ -1,5 +1,6 @@
 // TransactionTable.js
 import React from 'react';
+import './TransactionTable.css'; // Import the CSS file
 
 const TransactionTable = ({ transactions, deleteTransaction }) => {
   return (
@@ -13,7 +14,7 @@ const TransactionTable = ({ transactions, deleteTransaction }) => {
         </tr>
       </thead>
       <tbody>
-        {transactions.map((transaction) => (
+        {transactions.map((transaction) => ( //maps over the transactions array and creates a new tr element for each transaction.
           <tr key={transaction.id}>
             <td>{transaction.description}</td>
             <td>{transaction.amount}</td>
@@ -27,6 +28,6 @@ const TransactionTable = ({ transactions, deleteTransaction }) => {
     </table>
   );
 };
-
+//TransactionTable component is exported as the default export, making it available for import in other files.
 export default TransactionTable;
 
