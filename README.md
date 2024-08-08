@@ -1,70 +1,65 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+It's an app that allows users to add, filter, sort, and delete transactions. The application fetches data from a local JSON server and provides a user-friendly interface for managing transactions.
 
-## Available Scripts
+Features
+A table of all transactions.
+Add new transactions via a form.
+Filter transactions using a search bar.
+Sort transactions alphabetically by category or description.
+Delete transactions.
+Project Setup
+Prerequisites
+Node.js
+npm (Node Package Manager)
+JSON Server
 
-In the project directory, you can run:
+Installation
+ 1. Clone the repository
+ 2. Install dependencies
+ 3. Set up the JSON Server: Create a db.json file in the project root with the following content
+ 4. Start the React application
 
-### `npm start`
+ Project Structure
+ ├── public
+│   └── index.html
+├── src
+│   ├── components
+│   │   ├── AddTransactionForm.js
+│   │   ├── NavBar.js
+│   │   ├── TransactionTable.js
+│   │   └── SearchBar.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── db.json
+├── package.json
+└── README.md
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Components
+NavBar.js: Contains the navigation bar.
+AddTransactionForm.js: A form for adding new transactions.
+TransactionTable.js: Displays the list of transactions in a table format.
+SearchBar.js: Provides a search input to filter transactions.
+Footer.js: For the footer.
+Footer.css: Styling the footer
+Navbar.cc: Styling the Nav bar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Styling
+Custom styling for the components is provided in the corresponding CSS files.
 
-### `npm test`
+Usage
+Viewing Transactions: To add a new transaction.
+Filtering Transactions: Use the search bar to filter transactions by description.
+Sorting Transactions: Click the "Delete" button in the Action column to remove a transaction from the table.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-### `npm run build`
+License
+This project is licensed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Acknowledgements
+This project is part of a coding exercise for learning React. Special thanks to the Flatiron School for the guidance and resources
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
